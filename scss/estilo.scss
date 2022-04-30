@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background: linear-gradient(193deg, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+ul {
+    list-style: none;
+    li{
+        display: inline;
+        padding: 20px;
+        font-size: 20px;
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            &:hover{
+                font-size: 25px;
+                color: black;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: lightslategray;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+.redes {
+    display: flex;
+    justify-content: end;
+}
+
+.historia{
+    font-family: 'Inspiration', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Sura', serif;
+}
+
+.historia--estadio{
+    @extend .historia;
+    background-color: darkgray;
+}
+
+$posicion:(
+    arqueros:red,
+    defensores:blue,
+    volantes:green,
+    delanteros:grey
+);
+
+@each $clave, $valor in $posicion {
+    .#{$clave}--font {
+        color: $valor;
+        text-align: center;
+        }
+}

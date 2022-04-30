@@ -1,0 +1,60 @@
+* {
+  padding: 0px;
+  margin: 0px; }
+
+header {
+  background: linear-gradient(193deg, white 0%, red 50%, white 100%); }
+
+ul {
+  list-style: none; }
+  ul li {
+    display: inline;
+    padding: 20px;
+    font-size: 20px; }
+    ul li a {
+      text-decoration: none;
+      color: whitesmoke; }
+      ul li a:hover {
+        font-size: 25px;
+        color: black; }
+
+footer {
+  background-color: lightslategray; }
+
+.menu {
+  display: flex;
+  justify-content: center; }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: aliceblue; }
+
+.redes {
+  display: flex;
+  justify-content: end; }
+
+.historia, .historia--estadio {
+  font-family: 'Inspiration', cursive;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Sura', serif; }
+
+.historia--estadio {
+  background-color: darkgray; }
+
+.arqueros--font {
+  color: red;
+  text-align: center; }
+
+.defensores--font {
+  color: blue;
+  text-align: center; }
+
+.volantes--font {
+  color: green;
+  text-align: center; }
+
+.delanteros--font {
+  color: grey;
+  text-align: center; }
